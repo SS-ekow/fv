@@ -1,0 +1,93 @@
+.settings{
+  width: 100%;
+  height: 100%;
+  /* background: cyan; */
+  display: grid;
+  grid-template-rows: 55% 55% 25%;
+  gap: 1rem;
+}
+
+.top, .middle, .bottom{
+  background: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  
+}
+
+.top{
+  display: grid;
+  grid-template-rows: 10% 90%;
+}
+
+.head{
+  padding: 0.5rem 4px;
+  border-bottom: 1px solid #a4a2a2;
+  /* background: green; */
+}
+
+.body{
+  padding: 1rem;
+  height: 90%;
+  /* background: yellow; */
+}
+
+.acc_body{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding: 1rem;
+}
+
+.pass_body{
+  padding: 1rem;
+}
+
+.editAvi{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: black; */
+  
+}
+
+.avi{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: orangered;
+}
+
+.editForm{
+  height: 100%;
+}
+
+.form{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form_item{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.input{
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 0 1rem;
+}
+
+.flexed{
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  gap: 1rem;
+}
