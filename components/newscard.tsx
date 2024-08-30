@@ -1,4 +1,4 @@
-import styles from "./newscard.module.css";
+
 import Image from "next/image";
 import pic from "../public/FreshVegs/Image-5.png";
 

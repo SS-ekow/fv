@@ -1,6 +1,6 @@
 // components/footer.tsx
 
-import React from "react";
+
 import styles from "./footer.module.css";
 import Image from "next/image";
 import left from "../public/FreshVegs/left.png"

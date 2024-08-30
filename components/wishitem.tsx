@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Image from 'next/image';
 import cauliflower from '../public/FreshVegs/cauliflower.png'
 import Button from './ui/button';

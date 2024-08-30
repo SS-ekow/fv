@@ -1,4 +1,4 @@
-import React from "react";
+
 import AdminLayout from "../../components/adminlayout";
 import styles from "../../components/adminlayout.module.css";
 import Link from "next/link";

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Button from './ui/button';
 import Image from 'next/image';
 import eight from '../public/FreshVegs/Image-8.png'

@@ -1,7 +1,6 @@
 import Layout from '../components/layout';
 import styled from 'styled-components';
 import Button from '../components/ui/button';
-import Image from 'next/image';
 import BlogNav from '../components/blognav';
 
 

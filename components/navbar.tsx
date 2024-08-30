@@ -1,6 +1,5 @@
 
 import Link from "next/link";
-import React from "react";
 import styles from "./navbar.module.css";
 import Logo from "./logo";
 import { RxHamburgerMenu } from "react-icons/rx";
