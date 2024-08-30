@@ -1,5 +1,3 @@
-import React from 'react'
-import styles from './wishlist.module.css'
 import { SlSocialFacebook } from "react-icons/sl";
 import { FaTwitter, FaInstagram, FaPinterestP} from "react-icons/fa";
 import WishItem from './wishitem';
@@ -7,14 +5,14 @@ import WishItem from './wishitem';
 
 export default function Wishlist(){
   return(
-    <div className={styles.wishlist}>
-      <div className={styles.header}>
+    <div className='w-full h-full bg-white rounded-md shadow-md grid grid-rows-[1fr_7fr_2fr] '>
+      <div className='grid grid-cols-[2fr_1fr_1fr_1fr] border-b border-gray-300 p-4 '>
         <span>PRODUCT</span>
         <span>PRICE</span>
         <span>STOCK STATUS</span>
         <span></span>
       </div>
-      <div className={styles.body}>
+      <div className=' p-4 overflow-auto'>
         <WishItem />
         <WishItem />
         <WishItem />
@@ -25,8 +23,8 @@ export default function Wishlist(){
         
         
       </div>
-      <div className={styles.footer}>
-        <div className={styles.share}>
+      <div className='border-t border-gray-300 p-4'>
+        <div>
           <span>Share: </span>
           <div className='flex flex-row gap-4'>
             <div className='w-12 h-12 rounded-full hover:bg-green-500 flex flex-row align-center justify-center text-center'> <SlSocialFacebook /> </div>
@@ -37,6 +35,7 @@ export default function Wishlist(){
 
         </div>
       </div>
+  
     </div>
   )
 }

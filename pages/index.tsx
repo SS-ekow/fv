@@ -205,7 +205,7 @@ const Home: NextPage = () => {
         </section>
         <section className={styles.offer}>
           <div className={styles.offerImageLeft}>
-            <Image src={basket} width={0} height={0} className="rounded-md" />
+            <Image src={basket} width={0} height={0} className="rounded-md" alt="" />
           </div>
           <div className={styles.countdown}>
             <p className="text-sm text-green-500 font-semibold text-center">
@@ -249,7 +249,7 @@ const Home: NextPage = () => {
             </button>
           </div>
           <div className={styles.offerImageRight}>
-            <Image src={woman} width={0} height={0} className="rounded-sm" />
+            <Image src={woman} width={0} height={0} className="rounded-sm" alt="" />
           </div>
         </section>
         <section className={styles.featuredProducts}>
@@ -327,7 +327,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="w-2/3 relative top-[100px] h-full  rounded-md"><Image src={video} width={0} height={0} /></div>
+          <div className="w-2/3 relative top-[100px] h-full  rounded-md"><Image src={video} width={0} height={0} alt="" /></div>
           {/* <div className={styles.video}></div> */}
         </section>
 

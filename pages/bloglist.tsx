@@ -1,10 +1,6 @@
-import React from 'react';
 import Layout from '../components/layout';
 import styled from 'styled-components';
-import Button from '../components/ui/button';
-import Image from 'next/image';
 import BlogCard from '../components/blogcard';
-import eight from '../public/FreshVegs/Image-8.png'
 import BlogNav from '../components/blognav';
 import Link from 'next/link';
 
@@ -26,9 +22,32 @@ export default function BlogList(){
              <Link href='/singleblog'>
                 <BlogCard />
              </Link>
+             <Link href='/singleblog'>
+                <BlogCard />
+             </Link>
+             <Link href='/singleblog'>
+                <BlogCard />
+             </Link>
+             <Link href='/singleblog'>
+                <BlogCard />
+             </Link>
+             <Link href='/singleblog'>
+                <BlogCard />
+             </Link>
+             <Link href='/singleblog'>
+                <BlogCard />
+             </Link>
+             <Link href='/singleblog'>
+                <BlogCard />
+             </Link>
+             <Link href='/singleblog'>
+                <BlogCard />
+             </Link>
+             <Link href='/singleblog'>
+                <BlogCard />
+             </Link>
              
-             <BlogCard />
-             <BlogCard />
+             
            </div>
          </div>
          

@@ -1,9 +1,6 @@
-import React from "react";
 
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import styled from "styled-components";
-import Layout from "../components/layout";
 import { CiLocationOn } from "react-icons/ci";
 import { FaRegEnvelope } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";

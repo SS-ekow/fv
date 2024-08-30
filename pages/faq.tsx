@@ -1,6 +1,3 @@
-import React from "react";
-import Footer from "../components/footer";
-import Navbar from "../components/navbar";
 import styled from "styled-components";
 import NewsCard from '../components/newscard';
 import Layout from "../components/layout";

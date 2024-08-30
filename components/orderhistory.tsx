@@ -1,14 +1,12 @@
-import React from 'react'
-import styles from './orderhistory.module.css'
 import Link from 'next/link'
 import Pagination from './pagination'
 
 export default function OrderHistory(){
   return(
-    <div className={styles.history}>
-      <div className={styles.historyHeader}>
+    <div className='w-full h-full bg-white rounded-md shadow-md grid grid-rows-[1fr 9fr]'>
+      <div className='w-full flex flex-col justify-between '>
         <h3>Order History</h3>
-        <div className={styles.columns}>
+        <div className='grid grid-cols-5 bg-gray-200 p-2'>
           <h5>ORDER ID</h5>
           <h5>DATE</h5>
           <h5>TOTAL</h5>
@@ -16,8 +14,8 @@ export default function OrderHistory(){
           <h5>.</h5>
         </div>
       </div>
-      <div className={styles.historyBody}>
-        <div className={styles.historyItems}>
+      <div className='grid grid-rows-[9fr_1fr] p-4'>
+        <div>
           
         {
           [
@@ -67,7 +65,7 @@ interface HistoryItemProps {
 
 const HistoryItem = ({orderId, date, total, status, linkHref}: HistoryItemProps)=>{
   return(
-    <div className={styles.historyItem}>
+    <div className='w-full grid grid-cols-5 p-1'>
       <span>#{orderId}</span>
       <span>{date}</span>
       <span>GHS{total} (<span>5</span> products)</span>

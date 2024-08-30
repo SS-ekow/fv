@@ -1,4 +1,3 @@
-import React from 'react';
 import Layout from '../components/layout';
 import BillingForm from '../components/billingform';
 import Image from 'next/image';

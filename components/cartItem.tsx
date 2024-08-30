@@ -1,12 +1,11 @@
-import React from 'react';
+import {useState} from 'react';
 import Image from 'next/image';
-import styles from './cartItem.module.css';
 import nine from '../public/Image-9.png';
 import { RiDeleteBin6Line } from 'react-icons/ri';
 
 
 export default function CartItem({ productName, price, image }: CartItemProps) {
-  const [quantity, setQuantity] = React.useState(1);
+  const [quantity, setQuantity] = useState(1);
 
   const handleAdd = () => {
     setQuantity(quantity + 1);
@@ -19,18 +18,18 @@ export default function CartItem({ productName, price, image }: CartItemProps) {
   };
 
   return (
-    <div className={styles.cartItem}>
-      <div className={styles.product}>
+    <div className=' w-full grid grid-cols-[2fr_1fr_1fr_1fr] items-center p-2 border-b border-gray-300 '>
+      <div className='flex gap-4 items-center'>
         <Image src={image} alt="item" width={70} height={70} className="rounded-lg"/>
-        <div className={styles.productname}>
+        <div className='productname'>
           {productName}
         </div>
       </div>
       
-      <div className={styles.price}>
+      <div className='price'>
        GHS {price}
       </div>
-      <div className={styles.quantity}>
+      <div >
 
         <div className="flex w-fit p-2 flex-row gap-2 border border-solid rounded-full">
           <button className="w-6 h-6 flex justify-center align-center rounded-full bg-gray-300 text-black font-semibold" onClick={() => { handleSubtract() }}>-</button>
@@ -38,7 +37,7 @@ export default function CartItem({ productName, price, image }: CartItemProps) {
           <button className="w-6 h-6 flex justify-center align-center rounded-full bg-gray-300 text-black font-semibold" onClick={() => { handleAdd() }}>+</button>
         </div>
       </div>
-      <div className={styles.subtotal}>
+      <div className='flex gap-4 items-center'>
         GHS {price * quantity}
 
         <div className="hover:text-rose-500">

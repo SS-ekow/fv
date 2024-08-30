@@ -1,4 +1,3 @@
-import React from "react";
 import Layout from "../components/layout";
 import Details from "../components/details";
 import ShopCard from "../components/ui/shopcard";

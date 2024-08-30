@@ -1,5 +1,3 @@
-import React from 'react';
-import styles from './shopcard.module.css'; 
 import aubergine from '../../public/FreshVegs/aubergine.png';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -12,14 +10,14 @@ interface ShopCardProps {
   stars: number;
 }
 
-export default function ShopCard({ productName = 'Product Name', image = '', price = 14.99, stars = 3 }: ShopCardProps){
+export default function ShopCard({ productName = 'Product Name', image = '', price = 14.99, stars = 3 }: ShopCardProps){ 
   return(
-    <div className={styles.card}>
-      <div className={styles.cardImg}>
+    <div className=' w-96 h-116 bg-white border border-gray-300 rounded-md grid grid-rows-[3fr_1fr] gap-4 mb-4 hover:border hover:border-green-500 hover:shadow-lg'>
+      <div className='p-2 rounded-t-md'>
         <Image src={aubergine} width={0} height={0} alt='' objectFit="cover" className='rounded-md w-full h-full' />
       </div>
-      <div className={styles.cardBody}>
-        <div className={styles.info}>          
+      <div className=' p-4 flex items-center justify-between'>
+        <div className='inline-block'>          
           
             <span className='font-light text-green-600 text-lg'>{productName}</span>        
             <h5 className='font-semibold'>GHC {price}</h5>         
@@ -32,7 +30,7 @@ export default function ShopCard({ productName = 'Product Name', image = '', pri
           
         </div>
         <Link href='#'>
-          <div className={styles.cardBtn}>
+          <div>
             <button className='w-14 h-14 rounded-full bg-green-500 text-white text-3xl'><HiOutlineShoppingBag className='mx-auto my-auto'/></button>
           </div>
         </Link>

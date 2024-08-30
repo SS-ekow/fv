@@ -2,53 +2,55 @@ import React from 'react';
 import Button from './ui/button';
 import Image from 'next/image';
 import eight from '../public/FreshVegs/Image-8.png'
-import styles from './blognav.module.css';
+
+
+
 
 export default function BlogNav(){
   return(
-    <div className={styles.left}>
-       <div className={styles.search}>
+    <div className=" flex flex-col gap-4 p-4">
+       <div className="flex flex-col gap-4 p-2 border-b">
          <Button buttonText="Filter" />
-         <input type="text" placeholder="Search" />
+         <input type="text" placeholder="Search" className='border rounded-md px-4 py-2' />
        </div>
-       <div className={styles.categories}>
+       <div>
          <h3>Top Categories</h3>
-         <div className={styles.category}>
+         <div className="w-full flex justify-between p-4 ">
            <span>Fresh Fruit</span>
            <span>(134)</span>
          </div>
-         <div className={styles.category}>
+         <div className="w-full flex justify-between p-4 ">
            <span>Fresh Fruit</span>
            <span>(134)</span>
          </div>
-         <div className={styles.category}>
+         <div className="w-full flex justify-between p-4 ">
            <span>Fresh Fruit</span>
            <span>(134)</span>
          </div>
-         <div className={styles.category}>
+         <div className="w-full flex justify-between p-4 ">
            <span>Fresh Fruit</span>
            <span>(134)</span>
          </div>
-         <div className={styles.category}>
+         <div className="w-full flex justify-between p-4 ">
            <span>Fresh Fruit</span>
            <span>(134)</span>
          </div>
-         <div className={styles.category}>
+         <div className="w-full flex justify-between p-4 ">
            <span>Fresh Fruit</span>
            <span>(134)</span>
          </div>
-         <div className={styles.category}>
+         <div className="w-full flex justify-between p-4 ">
            <span>Fresh Fruit</span>
            <span>(134)</span>
          </div>
-         <div className={styles.category}>
+         <div className="w-full flex justify-between p-4 ">
            <span>Fresh Fruit</span>
            <span>(134)</span>
          </div>
        </div>
-       <div className={styles.popular}>
+       <div >
          <h3>Popular Tag</h3>
-         <div className={styles.tags}>
+         <div>
            <span>healthy</span>
            <span>low fat</span>
            <span>vegetarian</span>
@@ -56,38 +58,42 @@ export default function BlogNav(){
            <span>vitamins</span>
          </div>
        </div>
-       <div className={styles.gallery}>
+       <div className='allery'>
          <h3>Our Gallery</h3>
-         <div className={styles.galleryImages}>
-           <Image src={eight} alt ="" width={100} height={100} className={styles.img}/> 
-           <Image src={eight} alt ="" width={100} height={100} className={styles.img}/> 
-           <Image src={eight} alt ="" width={100} height={100} className={styles.img}/> 
-           <Image src={eight} alt ="" width={100} height={100} className={styles.img}/> 
-           <Image src={eight} alt ="" width={100} height={100} className={styles.img}/> 
-           <Image src={eight} alt ="" width={100} height={100} className={styles.img}/> 
-           <Image src={eight} alt ="" width={100} height={100} className={styles.img}/> 
-           <Image src={eight} alt ="" width={100} height={100} className={styles.img}/> 
+         <div className=" flex flex-wrap gap-4">
+           <Image src={eight} alt ="" width={100} height={100} className="rounded-md"/> 
+           <Image src={eight} alt ="" width={100} height={100} className="rounded-md"/> 
+           <Image src={eight} alt ="" width={100} height={100} className="rounded-md"/> 
+           <Image src={eight} alt ="" width={100} height={100} className="rounded-md"/> 
+           <Image src={eight} alt ="" width={100} height={100} className="rounded-md"/> 
+           <Image src={eight} alt ="" width={100} height={100} className="rounded-md"/> 
+           <Image src={eight} alt ="" width={100} height={100} className="rounded-md"/> 
+           <Image src={eight} alt ="" width={100} height={100} className="rounded-md"/> 
          </div>
        </div>
-       <div className={styles.recent}>
+       <div className='recent'>
          <h3>Recently Added</h3>
-         <div className={styles.recentCard}>
-           <div className={styles.recentCardImage}>
-           </div>
-           <div className={styles.recentCardContent}>
-             <span>Curabitur porttitor orci etc</span>
-             <p>Apr 25, 2021</p>
-           </div>
-           <div className={styles.recentCardContent}>
-             <span>Curabitur porttitor orci etc</span>
-             <p>Apr 25, 2021</p>
-           </div>
-           <div className={styles.recentCardContent}>
-             <span>Curabitur porttitor orci etc</span>
-             <p>Apr 25, 2021</p>
-           </div>
-         </div>
-       </div>
+         <Recent/>
+         <Recent/>
+         <Recent/>
+         
+       </div> 
      </div>
+  )
+}
+
+
+const Recent = () =>{
+  return(
+    <div className='grid grid-cols-5 mb-2 '>
+      <div className='col-span-2 mr-2'>
+        <div className='w-full rounded-md bg-rose-300'>
+          <Image src={eight} alt ="" width={0} height={0} className="rounded-md"/>
+        </div>
+      </div> 
+      <div className='col-span-3 flex flex-col gap-2 title'>Curabitur porttitor orci eget nequ accusamsn.
+        <span>Apr 25,2021</span>
+      </div>
+    </div>
   )
 }
